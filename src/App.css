@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.container {
+	font-family: "Montserrat", sans-serif;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h3 {
+	font-size: 1rem;
+	line-height: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header h1 {
+	font-size: 2.5rem;
+	line-height: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.inputBox {
+	width: 16rem !important;
+	height: 3.5rem;
+	border-radius: 2px;
+	background-color: #f9f9f9 !important;
+	font-weight: 400;
+	font-size: 1.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputContainer {
+	display: flex;
+	gap: 1rem;
+	margin: 0rem 1rem;
+}
+
+.messageBox {
+	background-color: #f9f9f9 !important;
+	width: 33rem;
+	margin: 0rem 1rem;
+}
+
+.btn {
+	width: 13.6rem;
+	height: 3.5rem;
+	font-size: 0.9rem;
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.formContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+	.inputContainer {
+		flex-direction: column;
+	}
+
+	.labelBox {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 600;
+		font-size: 0.9rem;
+		line-height: 1.5rem;
+		color: #252b42;
+	}
+
+	.header h1 {
+		font-size: 1.5rem;
+	}
 }
